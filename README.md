@@ -23,3 +23,10 @@ Type I Error and Type II Error- Definition, 10 Differences, Examples(https://the
 T-test- definition, formula, types, applications, example(https://thebiologynotes.com/t-test/)
 
 Chi-square Test- Definition, Formula, Uses, Table, Examples, Applications(https://thebiologynotes.com/chi-square-test/)
+
+Independent vs Dependent variables- Definition, 10 Differences, Examples(https://thebiologynotes.com/independent-and-dependent-variables/)
+
+Nominal, Ordinal, Interval and Ratio Data(https://thebiologynotes.com/nominal-ordinal-interval-and-ratio-data/)
+
+
+
