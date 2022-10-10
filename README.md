@@ -8,3 +8,4 @@ How to use historical markdown data to predict store sales!(https://medium.com/a
 
 The 40 Weirdest (And Best) Charts We Made In This Long, Strange Year(https://fivethirtyeight.com/features/the-40-weirdest-and-best-charts-we-made-in-2020/)
 
+ANOVA-(https://thebiologynotes.com/anova/)
