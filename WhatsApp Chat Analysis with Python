@@ -1,7 +1,155 @@
-You can use your WhatsApp data for many data science tasks like sentiment analysis, keyword extraction, named entity recognition, text analysis and several other natural language processing tasks. It also depends on who you are analyzing your WhatsApp messages with because you can find a lot of information from your WhatsApp messages which can also help you to solve business problems.
-Before starting with the task of WhatsApp Chat analysis with Python you need to extract your WhatsApp data from your smartphone which is a very easy task. To extract your WhatsApp chats, just open any chat with a person or a group and follow the steps mentioned below:
-If you are having an iPhone then tap on the Contact Name or the Group Name. In case you are having an Android smartphone then tap on the 3 dots above.
-Then scroll to the bottom and top on Export Chat.
-Then select without media for simplicity if it asks you whether you want your chats with or without media.
-Then email this chat to yourself and download it to your system.
-So this is how you can easily get your WhatsApp chats with any person or a group for the task of WhatsApp chat analysis. In the section below, I will take you through WhatsApp chat analysis with Python.
+You can use your WhatsApp records for plenty records technological know-how duties like sentiment evaluation, key-word extraction, named entity recognition, textual content evaluation and numerous different natural language processing tasks. It additionally relies upon on who you're studying your WhatsApp messages with due to the fact you could locate plenty of facts out of your WhatsApp messages which also can assist you to resolve commercial enterprise problems. 
+ Before beginning with the assignment of WhatsApp Chat evaluation with Python you want to extract your WhatsApp records out of your cellphone that is a totally smooth assignment. To extract your WhatsApp chats, simply open any chat with someone or a collection and comply with the stairs stated below: 
+ If you're having an iPhone then faucet at the Contact Name or the Group Name. In case you're having an Android cellphone then faucet at the three dots above. 
+ Then scroll to the lowest and pinnacle on Export Chat. 
+ Then pick out with out media for simplicity if it asks you whether or not you need your chats without or with media. 
+ Then e-mail this chat to your self and down load it in your system. 
+ So that is how you could effortlessly get your WhatsApp chats with any individual or a collection for the assignment of WhatsApp chat evaluation. In the segment below, I will take you via WhatsApp chat evaluation with Python.
+ import regex
+import pandas as pd
+import numpy as np
+import emoji
+from collections import Counter
+import matplotlib.pyplot as plt
+from wordcloud 
+import WordCloud, STOPWORDS, ImageColorGenerator
+def date_time(s):
+    pattern = '^([0-9]+)(\/)([0-9]+)(\/)([0-9]+), ([0-9]+):([0-9]+)[ ]?(AM|PM|am|pm)? -'
+    result = regex.match(pattern, s)
+    if result:
+        return True
+    return False
+
+def find_author(s):
+    s = s.split(":")
+    if len(s)==2:
+        return True
+    else:
+        return False
+
+def getDatapoint(line):
+    splitline = line.split(' - ')
+    dateTime = splitline[0]
+    date, time = dateTime.split(", ")
+    message = " ".join(splitline[1:])
+    if find_author(message):
+        splitmessage = message.split(": ")
+        author = splitmessage[0]
+        message = " ".join(splitmessage[1:])
+    else:
+        author= None
+ return date, time, author, message
+ data = []
+conversation = 'WhatsApp Chat with Sapna.txt'
+with open(conversation, encoding="utf-8") as fp:
+    fp.readline()
+    messageBuffer = []
+    date, time, author = None, None, None
+    while True:
+        line = fp.readline()
+        if not line:
+            break
+        line = line.strip()
+        if date_time(line):
+            if len(messageBuffer) > 0:
+                data.append([date, time, author, ' '.join(messageBuffer)])
+            messageBuffer.clear()
+            date, time, author, message = getDatapoint(line)
+            messageBuffer.append(message)
+        else:
+            messageBuffer.append(line)
+            df = pd.DataFrame(data, columns=["Date", 'Time', 'Author', 'Message'])
+df['Date'] = pd.to_datetime(df['Date'])
+print(df.tail(20))
+print(df.info())
+print(df.Author.unique())
+total_messages = df.shape[0]
+print(total_messages)
+media_messages = df[df["Message"]=='<Media omitted>'].shape[0]
+print(media_messages)
+def split_count(text):
+    emoji_list = []
+    data = regex.findall(r'\X',text)
+    for word in data:
+        if any(char in emoji.UNICODE_EMOJI for char in word):
+            emoji_list.append(word)
+    return emoji_list
+df['emoji'] = df["Message"].apply(split_count)
+
+emojis = sum(df['emoji'].str.len())
+print(emojis)
+URLPATTERN = r'(https?://\S+)'
+df['urlcount'] = df.Message.apply(lambda x: regex.findall(URLPATTERN, x)).str.len()
+links = np.sum(df.urlcount)
+
+print("Chats between Aman and Sapna")
+print("Total Messages: ", total_messages)
+print("Number of Media Shared: ", media_messages)
+print("Number of Emojis Shared", emojis)
+print("Number of Links Shared", links)
+media_messages_df = df[df['Message'] == '<Media omitted>']
+messages_df = df.drop(media_messages_df.index)
+messages_df['Letter_Count'] = messages_df['Message'].apply(lambda s : len(s))
+messages_df['Word_Count'] = messages_df['Message'].apply(lambda s : len(s.split(' ')))
+messages_df["MessageCount"]=1
+
+l = ["Aman Kharwal", "Sapna"]
+for i in range(len(l)):
+  # Filtering out messages of particular user
+  req_df= messages_df[messages_df["Author"] == l[i]]
+  # req_df will contain messages of only one particular user
+  print(f'Stats of {l[i]} -')
+  # shape will print number of rows which indirectly means the number of messages
+  print('Messages Sent', req_df.shape[0])
+  #Word_Count contains of total words in one message. Sum of all words/ Total Messages will yield words per message
+  words_per_message = (np.sum(req_df['Word_Count']))/req_df.shape[0]
+  print('Average Words per message', words_per_message)
+  #media conists of media messages
+  media = media_messages_df[media_messages_df['Author'] == l[i]].shape[0]
+  print('Media Messages Sent', media)
+  # emojis conists of total emojis
+  emojis = sum(req_df['emoji'].str.len())
+  print('Emojis Sent', emojis)
+  #links consist of total links
+  links = sum(req_df["urlcount"])   
+  print('Links Sent', links)
+  total_emojis_list = list(set([a for b in messages_df.emoji for a in b]))
+total_emojis = len(total_emojis_list)
+
+total_emojis_list = list([a for b in messages_df.emoji for a in b])
+emoji_dict = dict(Counter(total_emojis_list))
+emoji_dict = sorted(emoji_dict.items(), key=lambda x: x[1], reverse=True)
+for i in emoji_dict:
+  print(i)
+  
+emoji_df = pd.DataFrame(emoji_dict, columns=['emoji', 'count'])
+import plotly.express as px
+fig = px.pie(emoji_df, values='count', names='emoji')
+fig.update_traces(textposition='inside', textinfo='percent+label')
+fig.show()
+text = " ".join(review for review in messages_df.Message)
+print ("There are {} words in all the messages.".format(len(text)))
+stopwords = set(STOPWORDS)
+# Generate a word cloud image
+wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(text)
+# Display the generated image:
+# the matplotlib way:
+plt.figure( figsize=(10,5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+l = ["Aman Kharwal", "Sapna"]
+for i in range(len(l)):
+  dummy_df = messages_df[messages_df['Author'] == l[i]]
+  text = " ".join(review for review in dummy_df.Message)
+  stopwords = set(STOPWORDS)
+  #Generate a word cloud image
+  print('Author name',l[i])
+  wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(text)
+  #Display the generated image   
+  plt.figure( figsize=(10,5))
+  plt.imshow(wordcloud, interpolation='bilinear')
+  plt.axis("off")
+  plt.show()
+        
+    return date, time, author, message
