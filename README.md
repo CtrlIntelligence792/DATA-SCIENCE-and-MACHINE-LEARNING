@@ -19,3 +19,7 @@ Z-test- definition, formula, examples, uses, z-test vs t-test(https://thebiology
 P-value- definition, formula, table, finding p-value, significance(https://thebiologynotes.com/p-value/)
 
 Type I Error and Type II Error- Definition, 10 Differences, Examples(https://thebiologynotes.com/type-i-and-type-ii-error/)
+
+T-test- definition, formula, types, applications, example(https://thebiologynotes.com/t-test/)
+
+Chi-square Test- Definition, Formula, Uses, Table, Examples, Applications(https://thebiologynotes.com/chi-square-test/)
