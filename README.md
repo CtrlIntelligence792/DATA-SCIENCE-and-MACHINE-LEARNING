@@ -69,3 +69,5 @@ John E. Freund's Mathematical Statistics with Applications, 8e(https://www.amazo
 (https://gist.github.com/seankross/a412dfbd88b3db70b74b)
 
 (https://wiki.kidzsearch.com/wiki/Statistics)
+
+A guide to all Data Engineering Practitioners and Starters(https://medium.com/plumbersofdatascience/a-guide-to-all-data-engineering-practitioners-and-starters-aeacdce34586)
