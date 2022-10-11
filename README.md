@@ -28,5 +28,7 @@ Independent vs Dependent variables- Definition, 10 Differences, Examples(https:/
 
 Nominal, Ordinal, Interval and Ratio Data(https://thebiologynotes.com/nominal-ordinal-interval-and-ratio-data/)
 
+A Step-by-Step Explanation of Principal Component Analysis (PCA)(https://builtin.com/onboarding?destination=%2F)
+
 
 
