@@ -30,5 +30,9 @@ Nominal, Ordinal, Interval and Ratio Data(https://thebiologynotes.com/nominal-or
 
 A Step-by-Step Explanation of Principal Component Analysis (PCA)(https://builtin.com/onboarding?destination=%2F)
 
+How To Automate EDA in Data Science Projects(https://medium.com/analytics-vidhya/streamlit-app-for-exploratory-data-analysis-293a6c3f841)
+
+tableau course for data visualisation(https://github.com/KunaalNaik/Tableau_Course)
+
 
 
