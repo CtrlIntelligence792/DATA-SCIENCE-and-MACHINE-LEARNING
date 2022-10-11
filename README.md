@@ -46,6 +46,18 @@ Time Series(https://r-graph-gallery.com/time-series.html)
 
 A GGPLOT2 TUTORIAL FOR BEAUTIFUL PLOTTING IN R(https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
 
+https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes
+
+https://aman.ai/primers/ai/transformers/
+
+Structural time-series modelling with TensorFlow Probability (https://analyticsindiamag.com/structural-time-series-modelling-with-tensorflow-probability/)
+
+https://copyassignment.com/
+
+https://github.com/aboutsqlserver/code
+
+https://github.com/Mr-MeerMoazzam/Machine-Learning/blob/main/Non%20Linear%20Regression%20.ipynb
+
 
 
 
