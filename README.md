@@ -82,6 +82,14 @@ The Complete Collection of Data Science Cheat Sheets – Part 1(https://www.kdnu
 
 Python Crash Course(https://www.kdnuggets.com/2022/07/free-python-crash-course.html)
 
+Introduction to Recurrent Neural Networks with Keras and TensorFlow(https://pyimagesearch.com/2022/07/25/introduction-to-recurrent-neural-networks-with-keras-and-tensorflow/)
+
+(https://github.com/gitsuraaj/Data-Science-Series)
+
+LaTeX(https://www.overleaf.com/)
+
+Complete-DSA-Preparation(https://github.com/Prince-1501/Complete-DSA-Preparation)
+
 
 
 
