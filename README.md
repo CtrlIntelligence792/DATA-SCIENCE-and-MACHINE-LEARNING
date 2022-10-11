@@ -32,11 +32,18 @@ A Step-by-Step Explanation of Principal Component Analysis (PCA)(https://builtin
 
 How To Automate EDA in Data Science Projects(https://medium.com/analytics-vidhya/streamlit-app-for-exploratory-data-analysis-293a6c3f841)
 
+forecast accuracy metric(https://towardsdatascience.com/whats-the-hidden-cost-of-a-forecast-accuracy-metric-64ee0b86ce25)
+
 Top 10 Indian Government Datasets That You Can Use For Analytics Projects(https://analyticsindiamag.com/top-10-indian-government-datasets-that-you-can-use-for-analytics-projects/)
 
 https://github.com/KunaalNaik/Python_Data_Science_Course/blob/master/PY_ML_Jigsaw_Codes/Trees_and_Ensemble/Code%20Snippets.zip
 
 tableau course for data visualisation(https://github.com/KunaalNaik/Tableau_Course)
+
+Optimizing ARIMA model forecasts(https://towardsdatascience.com/automatic-vs-manual-arima-configuration-ceb06fe074da)
+
+Time Series(https://r-graph-gallery.com/time-series.html)
+
 
 
 
