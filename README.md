@@ -44,6 +44,8 @@ Optimizing ARIMA model forecasts(https://towardsdatascience.com/automatic-vs-man
 
 Time Series(https://r-graph-gallery.com/time-series.html)
 
+A GGPLOT2 TUTORIAL FOR BEAUTIFUL PLOTTING IN R(https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
+
 
 
 
