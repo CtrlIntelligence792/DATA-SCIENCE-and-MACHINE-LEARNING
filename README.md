@@ -92,6 +92,12 @@ Complete-DSA-Preparation(https://github.com/Prince-1501/Complete-DSA-Preparation
 
 (https://github.com/JosephWildey)
 
+difference-between-a-batch-and-an-epoch(https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/)
+
+(https://github.com/SnowflakeDefinitiveGuide/1st-Edition)
+
+data-science-books(https://www.mygreatlearning.com/blog/data-science-books/)
+follow me (https://www.linkedin.com/in/pranjalimishra3719/)
 
 
 
