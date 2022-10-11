@@ -71,3 +71,8 @@ John E. Freund's Mathematical Statistics with Applications, 8e(https://www.amazo
 (https://wiki.kidzsearch.com/wiki/Statistics)
 
 A guide to all Data Engineering Practitioners and Starters(https://medium.com/plumbersofdatascience/a-guide-to-all-data-engineering-practitioners-and-starters-aeacdce34586)
+
+Probability and combinatorics(https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:prob-comb)
+
+Statistics for Business-Decision Making and Analysis | Statistics for business and Economics | Third Edition Published by Pearson(https://www.amazon.in/dp/9353940648/ref=cm_sw_r_apan_glt_fabc_QTCMPHTFNWDB72H36B9B?_encoding=UTF8&psc=1)
+
