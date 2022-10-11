@@ -66,5 +66,5 @@ Logistic Regression — Detailed Overview(https://towardsdatascience.com/logisti
 
 John E. Freund's Mathematical Statistics with Applications, 8e(https://www.amazon.in/dp/9332519056/ref=cm_sw_r_apan_glt_fabc_CM028QE9XRJZ0J0KQRR1)
 
-
+(https://gist.github.com/seankross/a412dfbd88b3db70b74b)
 
