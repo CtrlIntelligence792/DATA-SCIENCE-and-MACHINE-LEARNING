@@ -76,3 +76,12 @@ Probability and combinatorics(https://www.khanacademy.org/math/precalculus/x9e81
 
 Statistics for Business-Decision Making and Analysis | Statistics for business and Economics | Third Edition Published by Pearson(https://www.amazon.in/dp/9353940648/ref=cm_sw_r_apan_glt_fabc_QTCMPHTFNWDB72H36B9B?_encoding=UTF8&psc=1)
 
+Collection of Data Science Cheat Sheets – Part 2(https://www.kdnuggets.com/2022/03/top-posts-week-0228-0306.html)
+
+The Complete Collection of Data Science Cheat Sheets – Part 1(https://www.kdnuggets.com/2022/02/complete-collection-data-science-cheat-sheets-part-1.html)
+
+Python Crash Course(https://www.kdnuggets.com/2022/07/free-python-crash-course.html)
+
+
+
+
