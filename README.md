@@ -58,6 +58,13 @@ https://github.com/aboutsqlserver/code
 
 https://github.com/Mr-MeerMoazzam/Machine-Learning/blob/main/Non%20Linear%20Regression%20.ipynb
 
+(https://stats.oarc.ucla.edu/)
+
+understand and implement assumption checks for one of the most important data science modeling techniques(https://www.soccernet.com/)
+
+Logistic Regression — Detailed Overview(https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc)
+
+John E. Freund's Mathematical Statistics with Applications, 8e(https://www.amazon.in/dp/9332519056/ref=cm_sw_r_apan_glt_fabc_CM028QE9XRJZ0J0KQRR1)
 
 
 
