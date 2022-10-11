@@ -68,3 +68,4 @@ John E. Freund's Mathematical Statistics with Applications, 8e(https://www.amazo
 
 (https://gist.github.com/seankross/a412dfbd88b3db70b74b)
 
+(https://wiki.kidzsearch.com/wiki/Statistics)
